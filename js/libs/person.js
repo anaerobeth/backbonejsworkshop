@@ -14,9 +14,8 @@ var PageView = Backbone.View.extend({
   // person template is a script tag in index.html
   // placeholders are filled in when rendered
 
-  model: PageView,
   //method
-  render: function(){
+  render: function() {
     this.$el.html(this.template(this.model.attributes));
     //take model, use model data then render template to run
     //replace with jquery wrapped version 
@@ -31,5 +30,5 @@ var pageView = new PageView({
 });
 
 //render the view
-pageView.render;
+pageView.render();
  
